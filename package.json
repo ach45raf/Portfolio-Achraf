@@ -1,0 +1,193 @@
+{
+  "name": "Achraf Arrouf - Portfolio Full Stack",
+  "description": "Portfolio web moderne et luxueux pour développeur Full Stack",
+  "version": "2.0.0",
+  "author": {
+    "name": "Achraf Arrouf",
+    "email": "achrafarrouf06@gmail.com",
+    "url": "https://achraf-arrouf.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ach45raf/mon-portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "fullstack",
+    "developer",
+    "web",
+    "interactive",
+    "responsive",
+    "dark-mode"
+  ],
+  "technologies": {
+    "frontend": [
+      "HTML5",
+      "CSS3",
+      "JavaScript ES6+",
+      "Bootstrap 5.3",
+      "Tailwind CSS",
+      "Font Awesome 6.5"
+    ],
+    "libraries": [
+      "Swiper.js - Carousels",
+      "AOS - Animations on Scroll",
+      "Google Fonts"
+    ]
+  },
+  "features": {
+    "design": [
+      "Dark Mode Premium",
+      "Dark/Light Mode Toggle",
+      "Glow Effects",
+      "Parallax Animation",
+      "Smooth Transitions"
+    ],
+    "sections": [
+      "Hero Section",
+      "Projects with Carousels",
+      "Skills with Animated Circles",
+      "About & Certifications",
+      "Contact Form",
+      "Footer"
+    ],
+    "interactive": [
+      "Sticky Navigation",
+      "Scroll Animations (AOS)",
+      "Form Validation",
+      "Mobile Menu",
+      "Swiper Carousels",
+      "Scroll to Top Button",
+      "Theme Toggle"
+    ]
+  },
+  "responsive": {
+    "mobile": true,
+    "tablet": true,
+    "desktop": true,
+    "breakpoints": {
+      "mobile": "max-width: 480px",
+      "tablet": "max-width: 768px",
+      "laptop": "max-width: 1024px",
+      "desktop": "1024px and above"
+    }
+  },
+  "performance": {
+    "optimization": [
+      "Lazy Loading Images",
+      "CSS Custom Properties",
+      "Minimal JavaScript",
+      "GPU Animations",
+      "Responsive Images",
+      "Efficient CSS"
+    ],
+    "targets": {
+      "lighthouse": "85+",
+      "core-web-vitals": "Good"
+    }
+  },
+  "accessibility": {
+    "wcag": "AA",
+    "features": [
+      "Semantic HTML",
+      "ARIA Labels",
+      "Keyboard Navigation",
+      "Color Contrast",
+      "Focus States"
+    ]
+  },
+  "seo": {
+    "meta": {
+      "title": "Achraf Arrouf - Développeur Full Stack",
+      "description": "Portfolio professionnel présentant mes projets, compétences et expériences en développement web Full Stack",
+      "keywords": "Développeur, Full Stack, Web Developer, Portfolio, HTML, CSS, JavaScript, PHP, Laravel"
+    },
+    "og": {
+      "title": "Achraf Arrouf - Full Stack Developer",
+      "description": "Mon portfolio interactif et moderne",
+      "type": "website",
+      "url": "https://achraf-arrouf.com"
+    }
+  },
+  "deployment": {
+    "platforms": [
+      "GitHub Pages",
+      "Netlify",
+      "Vercel",
+      "Shared Hosting"
+    ],
+    "setup": {
+      "github-pages": {
+        "steps": [
+          "Rename index-new.html to index.html",
+          "Push to GitHub repo",
+          "Enable Pages in Settings",
+          "Select main branch"
+        ]
+      },
+      "netlify": {
+        "steps": [
+          "Connect GitHub repo",
+          "Select branch: main",
+          "No build command needed",
+          "Publish directory: /",
+          "Done!"
+        ]
+      },
+      "vercel": {
+        "steps": [
+          "Connect GitHub repo",
+          "Framework: Other",
+          "Deploy",
+          "Custom domain optional"
+        ]
+      }
+    }
+  },
+  "files": {
+    "production": [
+      "index-new.html",
+      "style-new.css",
+      "script-new.js"
+    ],
+    "backup": [
+      "index.html",
+      "style.css",
+      "script.js"
+    ],
+    "documentation": [
+      "README-NOUVEAU.md",
+      "GUIDE-RAPIDE.md",
+      "package.json"
+    ]
+  },
+  "customization": {
+    "colors": {
+      "accent-primary": "#00d9a3",
+      "accent-secondary": "#00ff88",
+      "accent-tertiary": "#1dd1a1",
+      "background-primary": "#0a0e27",
+      "background-secondary": "#1a1f3a",
+      "text-primary": "#ffffff",
+      "text-secondary": "#b0b8d4"
+    },
+    "fonts": {
+      "primary": "Poppins",
+      "heading": "Playfair Display",
+      "mono": "JetBrains Mono"
+    },
+    "animations": {
+      "transition": "all 0.35s cubic-bezier(0.4, 0, 0.2, 1)",
+      "duration": "1s"
+    }
+  },
+  "contact": {
+    "email": "achrafarrouf06@gmail.com",
+    "github": "https://github.com/ach45raf",
+    "linkedin": "https://www.linkedin.com/in/achraf-arrouf-629487351/",
+    "website": "https://achraf-arrouf.com"
+  },
+  "license": "MIT",
+  "lastUpdated": "2026-01-28",
+  "status": "Active & Maintained"
+}
