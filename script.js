@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollTop();
     initSkillCircles();
     initFormSubmit();
+    initImageModal();
     
     console.log('✨ Portfolio chargé avec succès!');
 });
@@ -404,6 +405,58 @@ function preloadResource(href, as = 'script') {
     link.as = as;
     link.href = href;
     document.head.appendChild(link);
+}
+
+// ============================================
+// IMAGE MODAL FUNCTIONALITY
+// ============================================
+
+function initImageModal() {
+    // Create modal overlay and content
+    const modal = document.createElement('div');
+    modal.className = 'modal-overlay';
+    modal.id = 'imageModal';
+    
+    const modalContent = document.createElement('div');
+    modalContent.className = 'modal-content';
+    
+    const closeBtn = document.createElement('button');
+    closeBtn.className = 'modal-close';
+    closeBtn.innerHTML = '&times;';
+    closeBtn.type = 'button';
+    closeBtn.addEventListener('click', () => modal.classList.remove('active'));
+    
+    const img = document.createElement('img');
+    
+    modal.appendChild(closeBtn);
+    modal.appendChild(modalContent);
+    modalContent.appendChild(img);
+    document.body.appendChild(modal);
+    
+    // Add click listeners to certification images
+    const certImages = document.querySelectorAll('.cert-image');
+    certImages.forEach(certImage => {
+        certImage.addEventListener('click', () => {
+            const imageSrc = certImage.getAttribute('data-modal');
+            img.src = imageSrc;
+            img.alt = 'Certificate';
+            modal.classList.add('active');
+        });
+    });
+    
+    // Close modal on overlay click
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+        }
+    });
+    
+    // Close modal on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            modal.classList.remove('active');
+        }
+    });
 }
 
 // Exemples (commentés par défaut)
