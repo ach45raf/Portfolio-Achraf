@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Achraf Arrouf - Développeur Web Junior Full Stack | Portfolio professionnel">
+    <title>Achraf Arrouf | Développeur Web Full Stack</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Availability Badge -->
+    <!-- Badge désactivé -->
+
+    <!-- Download CV Button -->
+    <a href="cv-achraf-arrouf.pdf" class="download-cv-btn" title="Télécharger mon CV" download style="display: none;">
+        <i class="fas fa-download"></i>
+    </a>
+
+
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Achraf Arrouf</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#apropos" class="nav-link">À Propos</a></li>
+                <li><a href="#competences" class="nav-link">Compétences</a></li>
+                <li><a href="#projets" class="nav-link">Projets</a></li>
+                <li><a href="#experience" class="nav-link">Expérience</a></li>
+                <li><a href="#education" class="nav-link">Formation</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-greeting">Bonjour, je suis</span>
+                <h1 class="hero-name">
+                    <span class="text-gradient glitch" data-text="Achraf Arrouf">Achraf Arrouf</span>
+                </h1>
+                <p class="hero-title">
+                    <span class="typing-text"></span>
+                </p>
+                <p class="hero-description">
+                    Développeur Web Junior Full Stack passionné par le développement d'applications web modernes et performantes. 
+                    Motivé par la création de solutions digitales utiles et innovantes.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projets" class="btn btn-primary">
+                        <span>Voir mes projets</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Me contacter</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/ach45raf" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:achrafarrouf9@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/achraf-arrouf-629487351" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://wa.me/212674810831" target="_blank" class="social-link" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <!-- Photo de profil principale -->
+                    <div class="profile-main">
+                        <img src="profile/2.jpeg" alt="Achraf Arrouf" class="profile-photo">
+                        <div class="profile-ring"></div>
+                        <div class="profile-glow"></div>
+                    </div>
+                    
+                    <!-- Photos satellites qui tournent autour -->
+                    <div class="profile-satellites">
+                        <div class="satellite satellite-1">
+                            <img src="profile/1.jpeg" alt="Achraf">
+                        </div>
+                        <div class="satellite satellite-2">
+                            <img src="profile/3.jpeg" alt="Achraf">
+                        </div>
+                        <div class="satellite satellite-3">
+                            <img src="profile/4.jpeg" alt="Achraf">
+                        </div>
+                        <div class="satellite satellite-4">
+                            <img src="profile/5.jpeg" alt="Achraf">
+                        </div>
+                        <div class="satellite satellite-5">
+                            <img src="profile/6.jpeg" alt="Achraf">
+                        </div>
+                        <div class="satellite satellite-6">
+                            <img src="profile/7.jpeg" alt="Achraf">
+                        </div>
+                    </div>
+                    
+                    <!-- Texte animé -->
+                    <div class="floating-text floating-text-1">&lt;Developer /&gt;</div>
+                    <div class="floating-text floating-text-2">{ Full Stack }</div>
+                    <div class="floating-text floating-text-3">React</div>
+                    <div class="floating-text floating-text-4">Laravel</div>
+                </div>
+            </div>
+        </div>
+        <a href="#apropos" class="scroll-indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos" class="about section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01.</span>
+                À Propos de Moi
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Développeur Web Junior Full Stack diplômé en Développement Digital de l'Institut Spécialisé en Gestion et Informatique. 
+                        Je possède une solide maîtrise du développement front-end et back-end, avec une forte capacité d'apprentissage et d'adaptation.
+                    </p>
+                    <p>
+                        Passionné par les technologies web modernes, je combine créativité et rigueur technique pour créer 
+                        des applications performantes et des expériences utilisateur exceptionnelles. Mon objectif est de 
+                        transformer des idées en solutions digitales concrètes et innovantes.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-label">Projets Réalisés</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="7">0</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-label">Expériences Pro</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="image-placeholder-about">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="competences" class="skills section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02.</span>
+                Mes Compétences
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Langages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PHP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Frameworks & Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Laravel</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Next.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Express.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Bootstrap/Tailwind</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Outils & DevOps</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Git/GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">VS Code</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">WordPress</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">GitHub Copilot</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Soft Skills</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Résolution de problèmes</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Travail en équipe</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Gestion du temps</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Communication</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Esprit d'analyse</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projets" class="projects section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03.</span>
+                Mes Projets
+            </h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-gallery">
+                        <div class="project-image main-image" onclick="openProjectGallery(0, 0)">
+                            <img src="projets/pic1.png" alt="Application Gestion RH">
+                            <div class="project-overlay">
+                                <div class="zoom-icon"><i class="fas fa-expand"></i></div>
+                            </div>
+                        </div>
+                        <div class="gallery-thumbnails">
+                            <div class="thumbnail" onclick="openProjectGallery(0, 0)">
+                                <img src="projets/pic1.png" alt="Screenshot 1">
+                            </div>
+                            <div class="thumbnail" onclick="openProjectGallery(0, 1)">
+                                <img src="projets/pic2.png" alt="Screenshot 2">
+                            </div>
+                            <div class="thumbnail" onclick="openProjectGallery(0, 2)">
+                                <img src="projets/pic3.png" alt="Screenshot 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Application Gestion RH</h3>
+                        <p>Projet réalisé durant le stage chez SPS TECHNOLOGIE. Développement du module disciplinaire, gestion des avertissements et des contentieux.</p>
+                        <div class="project-tags">
+                            <span class="tag">Laravel</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-gallery">
+                        <div class="project-image main-image" onclick="openProjectGallery(1, 0)">
+                            <img src="projets/pic4.png" alt="Application Gestion Bibliothèque">
+                            <div class="project-overlay">
+                                <div class="zoom-icon"><i class="fas fa-expand"></i></div>
+                            </div>
+                        </div>
+                        <div class="gallery-thumbnails">
+                            <div class="thumbnail" onclick="openProjectGallery(1, 0)">
+                                <img src="projets/pic4.png" alt="Screenshot 1">
+                            </div>
+                            <div class="thumbnail" onclick="openProjectGallery(1, 1)">
+                                <img src="projets/pic5.png" alt="Screenshot 2">
+                            </div>
+                            <div class="thumbnail" onclick="openProjectGallery(1, 2)">
+                                <img src="projets/pic6.png" alt="Screenshot 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Application Gestion Bibliothèque</h3>
+                        <p>Application web de gestion des livres, utilisateurs et emprunts. Système complet avec interface intuitive et gestion des retours.</p>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-gallery">
+                        <div class="project-image main-image" onclick="openProjectGallery(2, 0)">
+                            <img src="projets/pic7.png" alt="Marketplace Maalem">
+                            <div class="project-overlay">
+                                <div class="zoom-icon"><i class="fas fa-expand"></i></div>
+                            </div>
+                        </div>
+                        <div class="gallery-thumbnails">
+                            <div class="thumbnail" onclick="openProjectGallery(2, 0)">
+                                <img src="projets/pic7.png" alt="Screenshot 1">
+                            </div>
+                            <div class="thumbnail" onclick="openProjectGallery(2, 1)">
+                                <img src="projets/pic8.png" alt="Screenshot 2">
+                            </div>
+                            <div class="thumbnail" onclick="openProjectGallery(2, 2)">
+                                <img src="projets/pic9.png" alt="Screenshot 3">
+                            </div>
+                            <div class="thumbnail" onclick="openProjectGallery(2, 3)">
+                                <img src="projets/pic10.png" alt="Screenshot 4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Marketplace "Maalem"</h3>
+                        <p>Plateforme mettant en relation les citoyens avec les artisans. Les citoyens peuvent rechercher des artisans selon leurs besoins. Les artisans peuvent publier et présenter leurs services.</p>
+                        <div class="project-tags">
+                            <span class="tag">Laravel</span>
+                            <span class="tag">React</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="experience" class="timeline section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">04.</span>
+                Expérience Professionnelle
+            </h2>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Mars 2026 - Avril 2026</span>
+                        <h3>Stagiaire Développeur Web Full Stack</h3>
+                        <p class="timeline-company">SPS TECHNOLOGIE</p>
+                        <p>Développement d'une application de gestion des ressources humaines (RH) avec modules de gestion disciplinaire, avertissements et contentieux. Travail en équipe agile avec utilisation de Laravel et MySQL.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Mai 2024 - Août 2024</span>
+                        <h3>Assistant Administratif</h3>
+                        <p class="timeline-company">Cash Plus</p>
+                        <p>Interface client et communication, coordination opérationnelle et travail collaboratif. Gestion des opérations quotidiennes et support client.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Janvier 2024 - Avril 2024</span>
+                        <h3>Agent de Documentation</h3>
+                        <p class="timeline-company">CNSS (Caisse Nationale de Sécurité Sociale)</p>
+                        <p>Optimisation du système d'archivage, gestion documentaire et maintien de l'intégrité des données. Amélioration des processus de classement et de récupération des documents.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="timeline section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">05.</span>
+                Formation & Diplômes
+            </h2>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 - 2026</span>
+                        <h3>Technicien Spécialisé en Développement Digital</h3>
+                        <p class="timeline-company">Institut Spécialisé en Gestion et Informatique</p>
+                        <p>Spécialité : Développement Web Full Stack. Formation complète couvrant le développement front-end, back-end, bases de données et méthodologies agiles. Diplômé avec mention.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 - 2023</span>
+                        <h3>Baccalauréat Science Physique</h3>
+                        <p class="timeline-company">Lycée Qualifiant Jaafar El Fassi El Fihri</p>
+                        <p>Baccalauréat en sciences physiques avec une solide base en mathématiques et sciences, développant des compétences analytiques et de résolution de problèmes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">06.</span>
+                Certifications
+            </h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="cert-image" onclick="openLightbox('certification/certif-badge-py1_page-0001.jpg', 'Python Essentials 1')">
+                        <img src="certification/certif-badge-py1_page-0001.jpg" alt="Python Essentials 1 Certificate">
+                        <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <h3>Python Essentials 1</h3>
+                    <p class="cert-issuer">Cisco Networking Academy</p>
+                    <p class="cert-description">Maîtrise des fondamentaux de Python et programmation de base</p>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-image" onclick="openLightbox('certification/certif-badge-py2_page-0001.jpg', 'Python Essentials 2')">
+                        <img src="certification/certif-badge-py2_page-0001.jpg" alt="Python Essentials 2 Certificate">
+                        <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <h3>Python Essentials 2</h3>
+                    <p class="cert-issuer">Cisco Networking Academy</p>
+                    <p class="cert-description">Programmation orientée objet et concepts avancés en Python</p>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-image" onclick="openLightbox('certification/javavscript 1.png', 'JavaScript Essentials 1')">
+                        <img src="certification/javavscript 1.png" alt="JavaScript Essentials 1 Certificate">
+                        <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <h3>JavaScript Essentials 1</h3>
+                    <p class="cert-issuer">Cisco Networking Academy</p>
+                    <p class="cert-description">Fondamentaux de JavaScript et développement web</p>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-image" onclick="openLightbox('certification/javascript 2.png', 'JavaScript Essentials 2')">
+                        <img src="certification/javascript 2.png" alt="JavaScript Essentials 2 Certificate">
+                        <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <h3>JavaScript Essentials 2</h3>
+                    <p class="cert-issuer">Cisco Networking Academy</p>
+                    <p class="cert-description">Compétences avancées en JavaScript moderne</p>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-image" onclick="openLightbox('certification/english 1.png', 'English for IT - Level 1')">
+                        <img src="certification/english 1.png" alt="English for IT 1 Certificate">
+                        <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <h3>English for IT - Level 1</h3>
+                    <p class="cert-issuer">Cisco Networking Academy</p>
+                    <p class="cert-description">Anglais technique pour professionnels IT - Niveau 1</p>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-image" onclick="openLightbox('certification/english 2.png', 'English for IT - Level 2')">
+                        <img src="certification/english 2.png" alt="English for IT 2 Certificate">
+                        <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <h3>English for IT - Level 2</h3>
+                    <p class="cert-issuer">Cisco Networking Academy</p>
+                    <p class="cert-description">Anglais technique pour professionnels IT - Niveau 2</p>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-image" onclick="openLightbox('certification/certfifcation digital content.png', 'Create Digital Content')">
+                        <img src="certification/certfifcation digital content.png" alt="Digital Content Certificate">
+                        <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <h3>Create Digital Content</h3>
+                    <p class="cert-issuer">Cisco Networking Academy</p>
+                    <p class="cert-description">Création de contenu digital et collaboration en ligne</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">07.</span>
+                Contactez-moi
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Discutons de votre projet</h3>
+                    <p>Je suis actuellement disponible pour de nouvelles opportunités professionnelles. N'hésitez pas à me contacter pour discuter de vos projets ou pour toute collaboration !</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:achrafarrouf9@gmail.com">achrafarrouf9@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span class="contact-label">Téléphone</span>
+                                <a href="tel:+212674810831">+212 6 74 81 08 31</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <span class="contact-label">WhatsApp</span>
+                                <a href="https://wa.me/212674810831" target="_blank">+212 6 74 81 08 31</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="contact-label">Localisation</span>
+                                <span>Casablanca, Maroc</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <span class="contact-label">GitHub</span>
+                                <a href="https://github.com/ach45raf" target="_blank">github.com/ach45raf</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <span class="contact-label">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/achraf-arrouf-629487351" target="_blank">linkedin.com/in/achraf-arrouf</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Nom complet</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Sujet</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Envoyer le message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Achraf Arrouf. Développé avec <i class="fas fa-heart"></i> et passion</p>
+                <div class="footer-links">
+                    <a href="https://github.com/ach45raf" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/achraf-arrouf-629487351" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:achrafarrouf9@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/212674810831" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal pour les images -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <button class="lightbox-nav lightbox-prev" onclick="event.stopPropagation(); navigateGallery(-1)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-nav lightbox-next" onclick="event.stopPropagation(); navigateGallery(1)">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+            <div class="lightbox-counter" id="lightbox-counter"></div>
+        </div>
+    </div>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <button class="chatbot-button" id="chatbot-toggle" aria-label="Ouvrir le chatbot">
+            <i class="fas fa-comments"></i>
+        </button>
+        
+        <div class="chatbot-window" id="chatbot-window">
+            <div class="chatbot-header">
+                <div class="chatbot-header-info">
+                    <div class="chatbot-avatar">
+                        🤖
+                    </div>
+                    <div class="chatbot-title">
+                        <h3>Assistant Portfolio</h3>
+                        <div class="chatbot-status">
+                            <span class="status-dot"></span>
+                            En ligne
+                        </div>
+                    </div>
+                </div>
+                <button class="chatbot-close" id="chatbot-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="chatbot-messages" id="chatbot-messages">
+                <!-- Messages will be added here -->
+            </div>
+            
+            <div class="chatbot-suggestions" id="chatbot-suggestions" style="display: none;">
+                <!-- Suggestions will be added here -->
+            </div>
+            
+            <div class="chatbot-input-container">
+                <button class="suggestions-toggle" id="suggestions-toggle" title="Afficher les suggestions">
+                    <i class="fas fa-lightbulb"></i>
+                </button>
+                <input 
+                    type="text" 
+                    class="chatbot-input" 
+                    id="chatbot-input" 
+                    placeholder="Posez votre question..."
+                    autocomplete="off"
+                >
+                <button class="chatbot-send" id="chatbot-send">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script-optimized.js"></script>
+    <script src="chatbot.js"></script>
+    <script src="chatbot-ui.js"></script>
+</body>
+</html>

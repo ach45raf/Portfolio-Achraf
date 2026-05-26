@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Compteurs</title>
+    <style>
+        body {
+            background: #0a0e27;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        
+        .stats-container {
+            display: flex;
+            gap: 4rem;
+            margin: 2rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 4rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #00d4ff, #0099ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: block;
+            margin-bottom: 1rem;
+        }
+        
+        .stat-label {
+            font-size: 1.2rem;
+            color: #9ca3af;
+        }
+        
+        button {
+            background: linear-gradient(135deg, #00d4ff, #0099ff);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            margin-top: 2rem;
+        }
+        
+        button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Test des Compteurs Animés</h1>
+    
+    <div class="stats-container">
+        <div class="stat-item">
+            <span class="stat-number" data-target="3">0</span>
+            <span class="stat-label">Projets Réalisés</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number" data-target="7">0</span>
+            <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number" data-target="3">0</span>
+            <span class="stat-label">Expériences Pro</span>
+        </div>
+    </div>
+    
+    <button onclick="startAnimation()">Démarrer l'animation</button>
+    
+    <script>
+        function startAnimation() {
+            const counters = document.querySelectorAll('.stat-number');
+            
+            counters.forEach(counter => {
+                // Reset à 0
+                counter.textContent = '0+';
+                
+                const target = parseInt(counter.getAttribute('data-target'));
+                const duration = 2000; // 2 secondes
+                const increment = target / (duration / 16); // 60 FPS
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    
+                    if (current >= target) {
+                        counter.textContent = target + '+';
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current) + '+';
+                    }
+                }, 16);
+            });
+        }
+        
+        // Animation automatique au chargement
+        window.addEventListener('load', () => {
+            setTimeout(startAnimation, 500);
+        });
+    </script>
+</body>
+</html>
